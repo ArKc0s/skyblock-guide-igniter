@@ -13,7 +13,7 @@
 
         <div class="search-container">
             <p class="search-box-title">Hypixel SkyBlock Stats</p>
-            <form method="get" action="/player">
+            <form method="post" action="/validate">
                 <input name="playerName" class="search-bar" placeholder="Entrez le pseudo d'un joueur">
             </form>
         </div>

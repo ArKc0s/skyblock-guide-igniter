@@ -5,10 +5,9 @@ namespace App\Controllers;
 class PlayerController extends BaseController
 {
 
-    public function getPlayer() {
+    public function getPlayer($playername = null) {
 
-        $data['playerName'] = $this->request->getGet('playerName');
-        return view('pages/player', $data);
+        echo $playername;
 
     }
 

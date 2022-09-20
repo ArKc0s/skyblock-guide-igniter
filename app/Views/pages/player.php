@@ -1,1 +1,1 @@
-CC <?php echo $data ?>
+CC
