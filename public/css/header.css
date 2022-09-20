@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.85);
     margin: 0;
 }
@@ -81,8 +82,11 @@ body {
 }
 
 .search-bar {
+    position: relative;
+    right: 10px;
     border-radius: 10px;
     height: 50px;
+    width: 100%;
     border: none;
     padding: 0 10px 0 10px;
     font-family: 'Montserrat', sans-serif;
@@ -90,6 +94,96 @@ body {
     font-weight: 500;
 }
 
+.form-container {
+    width: 100%;
+}
+
 .search-bar:focus {
     outline: none;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.98);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    display: flex;
+    height: calc(100% - 50px);
+}
+
+.guidenav-container {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(5,5,5,0.58);
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-bottom: 30px;
+}
+
+.guidenav-item {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 15px 0 15px 0;
+}
+
+.guidenav-title {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.featuredguides-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    padding-top: 2px;
+}
+
+.featured-guides {
+    display: flex;
+    justify-content: space-around;
+}
+
+.guide {
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    overflow: hidden;
+    text-shadow: -2px 3px 2px rgba(0,0,0,0.6);
+
+}
+
+.guide-title {
+    z-index: 10;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    text-align: end;
+}
+
+.guide-image {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
