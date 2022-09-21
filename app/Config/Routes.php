@@ -39,6 +39,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'IndexController::view');
 $routes->get('/player/(:any)', 'PlayerController::getPlayer/$1');
+$routes->get('/guides/(:any)', 'GuideController::viewGuide/$1');
+
 $routes->post('/validate', 'IndexController::validatePlayer');
 /*
  *

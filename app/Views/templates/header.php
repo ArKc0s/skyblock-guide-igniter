@@ -2,8 +2,8 @@
 
     <div class="header-container">
         <div class="menu-text">
-            <div class="title">HSG</div>
-            <a class="about" href="osef">A propos de l'App</a>
+            <div class="title montserrat-600">HSG</div>
+            <a class="about montserrat-400" href="osef">A propos de l'App</a>
         </div>
         <div class="menu-icons">
             <i class="fa-solid fa-bars menu-icon" id="bars" onclick="closeNav()"></i>
@@ -13,30 +13,30 @@
     <div class="overlay-content">
 
         <div class="guidenav-container">
-            <p class="guidenav-title">Nos guides</p>
+            <p class="guidenav-title montserrat-500">Nos guides</p>
             <br>
-            <a class="guidenav-item" href="#">Basics</a>
-            <a class="guidenav-item" href="#">Métiers</a>
-            <a class="guidenav-item" href="#">Donjons</a>
-            <a class="guidenav-item" href="#">Tous les guides</a>
+            <a class="guidenav-item montserrat-500" href="#">Basics</a>
+            <a class="guidenav-item montserrat-500" href="#">Métiers</a>
+            <a class="guidenav-item montserrat-500" href="#">Donjons</a>
+            <a class="guidenav-item montserrat-500" href="#">Tous les guides</a>
         </div>
 
         <div class="featuredguides-container">
-            <p class="guidenav-title">Guides recommandés</p>
+            <p class="guidenav-title montserrat-600">Guides recommandés</p>
             <div class="featured-guides">
-                <div class="guide">
+                <a href="/guides/starting" class="guide montserrat-600">
                     <div class="guide-title">Bien débuter</div>
                     <img class="guide-image" src="<?php echo base_url('assets/fishing.jpg'); ?>">
-                </div>
-                <div class="guide">
+                </a>
+                <div class="guide montserrat-600">
                     <div class="guide-title">La pêche</div>
                     <img class="guide-image" src="<?php echo base_url('assets/fishing.jpg'); ?>">
                 </div>
-                <div class="guide">
+                <div class="guide montserrat-600">
                     <div class="guide-title">Le mining</div>
                     <img class="guide-image" src="<?php echo base_url('assets/fishing.jpg'); ?>">
                 </div>
-                <div class="guide">
+                <div class="guide montserrat-600">
                     <div class="guide-title">Les enchantements</div>
                     <img class="guide-image" src="<?php echo base_url('assets/fishing.jpg'); ?>">
                 </div>
@@ -48,8 +48,8 @@
 
 <div class="header-container">
     <div class="menu-text">
-        <div class="title">HSG</div>
-        <a class="about" href="osef">A propos de l'App</a>
+        <div class="title montserrat-600">HSG</div>
+        <a class="about montserrat-400" href="osef">A propos de l'App</a>
     </div>
     <div class="menu-icons">
         <i class="fa-solid fa-user menu-icon"></i>
@@ -67,3 +67,4 @@
         document.getElementById("guideNav").style.height = "0%";
     }
 </script>
+

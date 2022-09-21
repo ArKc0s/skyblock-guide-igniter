@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Skyblock Guide</title>
+    <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('css/index.css'); ?>">
     <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('css/header.css'); ?>">
+    <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('css/fonts.css'); ?>">
     <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('plugin/fa/css/all.css'); ?>">
 </head>
 <body>
@@ -12,9 +14,9 @@
     <div class="page-wrapper">
 
         <div class="search-container">
-            <p class="search-box-title">Hypixel SkyBlock Stats</p>
+            <p class="search-box-title montserrat-600">Hypixel SkyBlock Stats</p>
             <form class="form-container" method="post" action="/validate">
-                <input name="playerName" class="search-bar" placeholder="Entrez le pseudo d'un joueur">
+                <input name="playerName" class="search-bar montserrat-500" placeholder="Entrez le pseudo d'un joueur">
             </form>
         </div>
 

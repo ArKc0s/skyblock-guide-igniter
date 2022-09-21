@@ -2,21 +2,20 @@
 
 namespace App\Controllers;
 
-class IndexController extends BaseController {
+class IndexController extends BaseController
+{
 
-    public function view() {
+    public function view()
+    {
         helper('url');
         return view('pages/index');
     }
 
-    public function validatePlayer() {
+    public function validatePlayer()
+    {
 
         $playerName = $this->request->getVar('playerName');
-        print_r($playerName);
-        ini_set('display_errors', '1');
-        ini_set('display_startup_errors', '1');
-        error_reporting(E_ALL);
-
+        //TODO: Check if player exists in Hypixel Skyblock API
         return redirect()->to('/player/'.$playerName);
 
     }
